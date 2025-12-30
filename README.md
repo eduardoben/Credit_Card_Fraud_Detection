@@ -74,18 +74,22 @@ param_distributions = {
 
 ## 6. Results and Performance
 The Logistic Regression model, trained on PCA-reduced and SMOTE-balanced data, demonstrated strong discriminative capability.
-Metric,Class 0 (Legit),Class 1 (Fraud),Overall
-Precision,1.00,0.31,97% Accuracy
-Recall,0.97,0.93,0.9934 ROC-AUC
-F1-Score,0.98,0.47,0.98 Weighted Avg
+
+| Metric    | Class 0 (Legit) | Class 1 (Fraud) | Overall              |
+|-----------|------------------|------------------|----------------------|
+| Precision | 1.00             | 0.31             | 97% Accuracy         |
+| Recall    | 0.97             | 0.93             | 0.9934 ROC-AUC       |
+| F1-Score  | 0.98             | 0.47             | 0.98 Weighted Avg    |
 
 
 
 ## 7. Conclusion
-The findings indicate that Kernel PCA consistently outperformed linear PCA, suggesting that fraudulent behavior is driven by non-linear patterns not captured by linear projections. Unsupervised dimensionality reduction proved to be an effective tool for fraud detection in highly imbalanced settings.
+The findings indicate that Kernel PCA consistently outperformed linear PCA, suggesting that fraudulent behavior is driven by non-linear patterns not captured by linear projections. 
+Unsupervised dimensionality reduction proved to be an effective tool for fraud detection in highly imbalanced settings.
 
 ### Recommendations:
 
 * Combine Kernel PCA with interpretable classifiers to balance performance and deployment scalability.
 
-### Future Work: Implement a 1D CNN or SVM model to potentially further improve performance for this data type.
+### Future Work: 
+* Implement a 1D CNN or SVM model to potentially further improve performance for this data type.
